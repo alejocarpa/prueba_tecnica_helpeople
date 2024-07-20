@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^api/products/([0-9]+)$ products/products.php?product=$1
+RewriteRule ^api/products products/products.php
+
+RewriteRule ^api/categories/([0-9]+)$ categories/categories.php?category=$1
+RewriteRule ^api/categories categories/categories.php
+
+RewriteRule ^api/cart/checkout checkout/checkout.php
+RewriteRule ^api/cart cart/cart.php
+
+RewriteRule ^api/users/upload usersUpload/usersUpload.php
+RewriteRule ^api/users users/users.php
+
